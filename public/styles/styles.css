@@ -30,9 +30,11 @@ html {
 
 body {
     background: #2B292E;
-  color: #fafafa;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+    color: #fafafa;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 button {
@@ -46,22 +48,29 @@ a {
 /* Container */
 
 .container {
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.6rem;
+}
+.head {
+    float: left;
 }
 
 /* Header */
 
 .header {
-  background: #6F439C;
-  color:white;
-  padding: 1.6rem 0;
+    position: fixed;
+    background: #8e3b3b;
+    color:white;
+    padding: 1.6rem 0;
+    width: 100%;
+    top: 0px;
 }
 
 .header__title {
   font-size: 3.2rem;
   margin-bottom: .4rem;
+  
 }
 
 .header__subtitle {
@@ -73,10 +82,11 @@ a {
 /* Actions Bar */
 
 .actions {
-    background-color: #353239;
+    /* background-color: #353239; */
     /* border-bottom: 1px solid #dedfe0; */
     /* color: #333333; */
-    padding: 1rem
+    padding: 1rem;
+    float: right;
 }
 
 .actions__container {
@@ -96,11 +106,13 @@ a {
 
 .input {
     border: none;
+    border-radius: 2px;
     font-size: 1.4rem;
     font-weight: 300;
     height: 3rem;
     margin-right: 1.6rem;
     padding: .4rem .8rem;
+    letter-spacing: 1px;
 }
 
 .checkbox {
@@ -113,9 +125,9 @@ a {
 }
 
 .button {
-    background: #7044a0;
+    background: #a33c3c;
     border: none;
-    border-bottom: 2px solid #603a88;
+    border-bottom: 2px solid #440000;
     color: white;
     font-size: 1.4rem;
     font-weight: 300;
@@ -124,7 +136,7 @@ a {
 }
 
 .button:hover {
-    background: #5F3A87;
+    background: #440000;
 }
 
 .button--secondary {
@@ -159,7 +171,6 @@ a {
     padding: .8rem;
     width: 100%;
 }
-
 .body-input {
     border: 1px solid #DEDFE0;
     font-family: inherit;
@@ -222,4 +233,13 @@ a {
 
 .empty-message {
     margin: 3.2rem 0;
+}
+.footer {
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0px;
+    background: #8e3b3b;
+    color:white;
+    padding: 2rem 0;
+    width: 100%;
 }
